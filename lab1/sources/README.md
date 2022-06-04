@@ -70,41 +70,34 @@
 ```cmd
 REM Смотрим текущую кодовую страницу
 chcp
-REM Результат:
-Active code page: 437
+REM Результат: Active code page: 437
 
 
 REM Заменяем текущую кодовую страницу страницей «Восточная и центральная Европа»
 chcp 852
-REM Результат:
-Active code page: 852
+REM Результат: Active code page: 852
 
 REM Смотрим текущую кодовую страницу
 chcp
-REM Результат:
-Active code page: 852
+REM Результат: Active code page: 852
 
 
 REM Заменяем текущую кодовую страницу на «Французский (Канада)»
 chcp 863
-REM Результат:
-Active code page: 863
+REM Результат: Active code page: 863
 
 REM Смотрим текущую кодовую страницу
 chcp
-REM Результат:
-Active code page: 863
+REM Результат: Active code page: 863
 
 
 REM Возвращаем первоначальную кодовую страницу
 chcp 437
-REM Результат:
-Active code page: 437
+REM Результат: Active code page: 437
 
 REM Смотрим текущую кодовую страницу
 chcp
-REM Результат:
-Active code page: 437
+REM Результат: Active code page: 437
 ```
 
 ## Задание 3
