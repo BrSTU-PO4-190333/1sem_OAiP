@@ -17,7 +17,7 @@
 - [ ] [Задание 14](#задание-14)
 - [ ] [Задание 15](#задание-15)
 - [ ] [Задание 16](#задание-16)
-- [ ] [Задание 17](#задание-17)
+- [x] [Задание 17](#задание-17)
 - [ ] [Задание 18](#задание-18)
 - [ ] [Задание 19](#задание-19)
 - [ ] [Задание 20](#задание-20)
@@ -190,6 +190,14 @@ color 24
 ## Задание 17
 
 Для диска `C:\` выведите текущие пути поиска исполняемых файлов.
+
+```cmd
+REM Выводим пути поиска исполняемых файлов для диска C:\
+c:
+cd c:\
+echo %path%
+REM Результат: C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\MyApps\MicrosoftVSCode\bin;C:\MyApps\Git\cmd;C:\Users\gpi_\AppData\Local\Microsoft\WindowsApps;  
+```
 
 ## Задание 18
 
