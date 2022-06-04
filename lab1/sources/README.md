@@ -27,7 +27,7 @@
 - [x] [Задание 24](#задание-24)
 - [x] [Задание 25](#задание-25)
 - [x] [Задание 26](#задание-26)
-- [ ] [Задание 27](#задание-27)
+- [x] [Задание 27](#задание-27)
 
 ## Создаём диск R
 
@@ -379,6 +379,38 @@ REM Результат: BB-BB-BB-BB-BB-BB   \Device\Tcpip_{BBBBBBBB-BBBB-BBBB-BB
 ## Задание 27
 
 Узнайте текущий IP-адрес, шлюз, DNS и т.п.
+
+```cmd
+REM Узнаём текущий IP-адрес
+ipconfig
+REM Результат: 
+REM Результат: Windows IP Configuration
+REM Результат: 
+REM Результат: 
+REM Результат: Ethernet adapter Ethernet:
+REM Результат: 
+REM Результат:    Media State . . . . . . . . . . . : Media disconnected
+REM Результат:    Connection-specific DNS Suffix  . : 
+REM Результат: 
+REM Результат: Wireless LAN adapter Local Area Connection* 1:
+REM Результат: 
+REM Результат:    Media State . . . . . . . . . . . : Media disconnected
+REM Результат:    Connection-specific DNS Suffix  . : 
+REM Результат: 
+REM Результат: Wireless LAN adapter Local Area Connection* 2:
+REM Результат: 
+REM Результат:    Media State . . . . . . . . . . . : Media disconnected
+REM Результат:    Connection-specific DNS Suffix  . :
+REM Результат: 
+REM Результат: Wireless LAN adapter Wi-Fi:
+REM Результат: 
+REM Результат:    Connection-specific DNS Suffix  . :
+REM Результат:    Link-local IPv6 Address . . . . . : fe80::459:4af5:fa9f:726a%17
+REM Результат:    IPv4 Address. . . . . . . . . . . : 192.168.100.5
+REM Результат:    Subnet Mask . . . . . . . . . . . : 255.255.255.0
+REM Результат:    Default Gateway . . . . . . . . . : fe80::1%17
+REM Результат:                                        192.168.100.1
+```
 
 ## Задание 28
 
