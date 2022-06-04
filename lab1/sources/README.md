@@ -310,9 +310,10 @@ REM Резултьтат: 0:00:12.68
 Организуйте вывод графического дерево каталога `С:\`.
 
 ```cmd
-tree c:
+REM Выводим графическое дерево каталога C:\
+tree C:\
 REM Результат: Folder PATH listing
-REM Результат: Volume serial number is 00000015 E85A:BD9A
+REM Результат: Volume serial number is 0000000A E85A:BD9A
 REM Результат: C:.
 REM Результат: ├───MyApps
 REM Результат: │   ├───Git
