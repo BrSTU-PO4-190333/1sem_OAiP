@@ -21,7 +21,7 @@
 - [ ] [Задание 18](#задание-18)
 - [ ] [Задание 19](#задание-19)
 - [ ] [Задание 20](#задание-20)
-- [ ] [Задание 21](#задание-21)
+- [x] [Задание 21](#задание-21)
 - [ ] [Задание 22](#задание-22)
 - [ ] [Задание 23](#задание-23)
 - [ ] [Задание 24](#задание-24)
@@ -224,6 +224,61 @@ REM Результат: C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;
 
 Выведите на экран подробные сведения о конфигурации компьютера и операционной системы,
 сведения о безопасности, код продукта и параметры оборудования, такие как ОЗУ, дисковое пространство и сетевые карты.
+
+```cmd
+REM Выводим подробные сведения о конфигурации компьютера и операционной системы,
+REM код продукта и параметры оборудования, такие как ОЗУ,
+REM дисковое пространство и сетевые карты
+systeminfo
+REM Результат: 
+REM Результат:  Host Name:                 ASPIRE3
+REM Результат:  OS Name:                   Microsoft Windows 10 Home
+REM Результат:  OS Version:                10.0.19044 N/A Build 19044
+REM Результат:  OS Manufacturer:           Microsoft Corporation
+REM Результат:  OS Configuration:          Standalone Workstation
+REM Результат:  OS Build Type:             Multiprocessor Free
+REM Результат:  Registered Owner:          gpi_
+REM Результат:  Registered Organization:
+REM Результат:  Product ID:                00326-10000-00000-AA770
+REM Результат:  Original Install Date:     6/3/2022, 10:13:51 PM
+REM Результат:  System Boot Time:          6/4/2022, 3:31:56 AM
+REM Результат:  System Manufacturer:       Acer
+REM Результат:  System Model:              Aspire A315-23
+REM Результат:  System Type:               x64-based PC
+REM Результат:  Processor(s):              1 Processor(s) Installed.
+REM Результат:                             [01]: AMD64 Family 23 Model 24 Stepping 1 AuthenticAMD ~1700 Mhz
+REM Результат:  BIOS Version:              Insyde Corp. V1.06, 4/27/2020
+REM Результат:  Windows Directory:         C:\Windows
+REM Результат:  System Directory:          C:\Windows\system32
+REM Результат:  Boot Device:               \Device\HarddiskVolume1
+REM Результат:  System Locale:             en-us;English (United States)
+REM Результат:  Input Locale:              en-us;English (United States)
+REM Результат:  Time Zone:                 (UTC-08:00) Pacific Time (US & Canada)
+REM Результат:  Total Physical Memory:     3,521 MB
+REM Результат:  Available Physical Memory: 1,604 MB
+REM Результат:  Virtual Memory: Max Size:  4,865 MB
+REM Результат:  Virtual Memory: Available: 2,485 MB
+REM Результат:  Virtual Memory: In Use:    2,380 MB
+REM Результат:  Page File Location(s):     C:\pagefile.sys
+REM Результат:  Domain:                    WORKGROUP
+REM Результат:  Logon Server:              \\ASPIRE3
+REM Результат:  Hotfix(s):                 4 Hotfix(s) Installed.
+REM Результат:                             [01]: KB5004331
+REM Результат:                             [02]: KB5003791
+REM Результат:                             [03]: KB5006670
+REM Результат:                             [04]: KB5005699
+REM Результат:  Network Card(s):           2 NIC(s) Installed.
+REM Результат:                             [01]: Realtek PCIe GbE Family Controller
+REM Результат:                                   Connection Name: Ethernet
+REM Результат:                                   Status:          Media disconnected
+REM Результат:                             [02]: Qualcomm Atheros QCA9377 Wireless Network Adapter
+REM Результат:                                   Connection Name: Wi-Fi
+REM Результат:                                   Status:          Media disconnected
+REM Результат:  Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+REM Результат:                             Virtualization Enabled In Firmware: Yes
+REM Результат:                             Second Level Address Translation: Yes
+REM Результат:                             Data Execution Prevention Available: Yes
+```
 
 ## Задание 22
 
