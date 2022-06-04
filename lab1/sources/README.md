@@ -1,7 +1,7 @@
 # CMD
 
 - [x] [Создаём диск R](#создаём-диск-r)
-- [ ] [Задание 1](#задание-1)
+- [x] [Задание 1](#задание-1)
 - [x] [Задание 2](#задание-2)
 - [ ] [Задание 3](#задание-3)
 - [ ] [Задание 4](#задание-4)
@@ -60,6 +60,182 @@
 Удалите атрибут "Только чтение" для всех файлов из папки `R:\LAB\` с расширением `*.txt`.
 Отмените атрибут "Только чтение" для всех файлов в каталоге `R:\LAB\`.
 Установите атрибут «Архивный» для всех файлов на диске `R:\`.
+
+```
+r:
+
+REM Создаём файл R:\test3.txt
+copy con test3.txt
+REM Вводим текст
+REM Жмём Ctrl + Z
+REM Результат: Содержимое для файла тест 3
+REM Результат: Сожержимое для файла тест 3^Z
+REM Результат:         1 file(s) copied.
+
+
+REM Создаём каталог R:\LAB
+mkdir LAB
+
+
+REM Проверяем
+dir
+REM Результат:  Volume in drive R is R
+REM Результат:  Volume Serial Number is 92FB-194A
+REM Результат: 
+REM Результат:  Directory of R:\
+REM Результат: 
+REM Результат: 06/04/2022  12:33 AM    <DIR>          LAB
+REM Результат: 06/04/2022  12:30 AM                56 test3.txt
+REM Результат:                1 File(s)             56 bytes
+REM Результат:                1 Dir(s)   1,058,406,400 bytes free
+```
+
+```cmd
+REM Создаю файл
+copy con LAB\file1.txt
+REM Результат: content for file 1^Z
+REM Результат:         1 file(s) copied.
+
+REM Создаю файл
+copy con LAB\file2.txt  
+REM Результат: content for file 2^Z
+REM Результат:         1 file(s) copied.
+
+REM Создаю файл
+copy con LAB\file3.txt  
+REM Результат: content for file 3^Z
+REM Результат:         1 file(s) copied.
+
+REM Создаю файл
+copy con LAB\file4.txt  
+REM Результат: content for file 4^Z
+REM Результат:         1 file(s) copied.
+
+REM Создаю файл
+copy con LAB\file5.txt  
+REM Результат: content for file 5^Z
+REM Результат:         1 file(s) copied.
+
+REM Создаю файл
+copy con LAB\file6.txt  
+REM Результат: content for file 6^Z
+REM Результат:         1 file(s) copied.
+
+
+type LAB\file1.txt
+REM Результат: content for file 1
+
+type LAB\file2.txt
+REM Результат: content for file 2
+
+type LAB\file3.txt
+REM Результат: content for file 3
+
+type LAB\file4.txt
+REM Результат: content for file 4
+
+type LAB\file5.txt
+REM Результат: content for file 5
+
+type LAB\file6.txt
+REM Результат: content for file 6
+```
+
+```cmd
+attrib test3.txt
+REM Результат: A                    R:\test3.txt
+
+REM Назначаю атрибут «Только чтение» файлу R:\test3.txt
+attrib -a +r test3.txt
+
+attrib test3.txt
+REM Результат:      R               R:\test3.txt
+```
+
+```cmd
+attrib LAB\*
+REM Результат: A                    R:\LAB\file1.txt
+REM Результат: A                    R:\LAB\file2.txt
+REM Результат: A                    R:\LAB\file3.txt
+REM Результат: A                    R:\LAB\file4.txt
+REM Результат: A                    R:\LAB\file5.txt
+REM Результат: A                    R:\LAB\file6.txt
+
+attrib +r LAB\*
+
+attrib LAB\*    
+REM Результат: A    R               R:\LAB\file1.txt
+REM Результат: A    R               R:\LAB\file2.txt
+REM Результат: A    R               R:\LAB\file3.txt
+REM Результат: A    R               R:\LAB\file4.txt
+REM Результат: A    R               R:\LAB\file5.txt
+REM Результат: A    R               R:\LAB\file6.txt
+
+REM Удаляю атрибут "Только чтение" для всех файлов из папки R:\LAB\ с расширением *.txt
+attrib -r LAB\*.txt
+
+attrib LAB\*    
+REM Результат: A                    R:\LAB\file1.txt
+REM Результат: A                    R:\LAB\file2.txt
+REM Результат: A                    R:\LAB\file3.txt
+REM Результат: A                    R:\LAB\file4.txt
+REM Результат: A                    R:\LAB\file5.txt
+REM Результат: A                    R:\LAB\file6.txt
+```
+
+```
+attrib /s
+REM Результат: A  SH                R:\$RECYCLE.BIN\S-1-5-21-1572068156-799976528-1259778827-1001\desktop.ini
+REM Результат: A                    R:\LAB\file1.txt
+REM Результат: A                    R:\LAB\file2.txt
+REM Результат: A                    R:\LAB\file3.txt
+REM Результат: A                    R:\LAB\file4.txt
+REM Результат: A                    R:\LAB\file5.txt
+REM Результат: A                    R:\LAB\file6.txt
+REM Результат:      R               R:\test3.txt
+
+
+attrib /s -a
+REM Результат: Not resetting hidden file - R:\$RECYCLE.BIN\S-1-5-21-1572068156-799976528-1259778827-1001\desktop.ini
+
+
+attrib /s
+REM Результат: A  SH                R:\$RECYCLE.BIN\S-1-5-21-1572068156-799976528-1259778827-1001\desktop.ini
+REM Результат:                      R:\LAB\file1.txt
+REM Результат:                      R:\LAB\file2.txt
+REM Результат:                      R:\LAB\file3.txt
+REM Результат:                      R:\LAB\file4.txt
+REM Результат:                      R:\LAB\file5.txt
+REM Результат:                      R:\LAB\file6.txt
+REM Результат:      R               R:\test3.txt
+
+
+attrib /s
+REM Результат: A  SH                R:\$RECYCLE.BIN\S-1-5-21-1572068156-799976528-1259778827-1001\desktop.ini
+REM Результат:                      R:\LAB\file1.txt
+REM Результат:                      R:\LAB\file2.txt
+REM Результат:                      R:\LAB\file3.txt
+REM Результат:                      R:\LAB\file4.txt
+REM Результат:                      R:\LAB\file5.txt
+REM Результат:                      R:\LAB\file6.txt
+REM Результат:      R               R:\test3.txt
+
+
+REM Устанавливаю атрибут «Архивный» для всех файлов на диске R:\
+attrib /s +a
+REM Результат: Not resetting hidden file - R:\$RECYCLE.BIN\S-1-5-21-1572068156-799976528-1259778827-1001\desktop.ini
+
+
+attrib /s    
+REM Результат: A  SH                R:\$RECYCLE.BIN\S-1-5-21-1572068156-799976528-1259778827-1001\desktop.ini
+REM Результат: A                    R:\LAB\file1.txt
+REM Результат: A                    R:\LAB\file2.txt
+REM Результат: A                    R:\LAB\file3.txt
+REM Результат: A                    R:\LAB\file4.txt
+REM Результат: A                    R:\LAB\file5.txt
+REM Результат: A                    R:\LAB\file6.txt
+REM Результат: A    R               R:\test3.txt
+```
 
 ## Задание 2
 
