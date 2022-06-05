@@ -23,7 +23,7 @@ void OAiP_lab6_b5(double a, double b, double h)
 
         if (x == a + 2 * h)
         {
-            x += 0.2;
+            x += h;
             printf(" continue \n");
             continue;
         }
@@ -31,6 +31,6 @@ void OAiP_lab6_b5(double a, double b, double h)
         f = cos(x) * exp(-x);
         printf(" f(% f) = % f \n", x, f);
 
-        x += 0.2;
+        x += h;
     } while (1);
 }
