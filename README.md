@@ -6,12 +6,15 @@
 
 - [Методичка](docs/lab1/OAiP_lab1.doc)
 - [Теория](docs/lab1/OAiP_lab1_method.doc)
+- [Исходный код](https://github.com/BrSTU-PO4-Galanin/1sem_OAiP/tree/galanin/lab1/sources)
 
 ### Лабораторная работа №2
 
 **Тема**: Блок-схемы
 
 - [Методичка](docs/lab2/OAiP_lab2.doc)
+- [Исходный код](https://github.com/BrSTU-PO4-Galanin/1sem_OAiP/tree/galanin/lab2/sources)
+- [Отчёт](https://github.com/BrSTU-PO4-Galanin/1sem_OAiP/blob/pdf/ОАиП_ПО-4_Галанин_лаб2.pdf)
 
 ### Лабораторная работа №3
 
