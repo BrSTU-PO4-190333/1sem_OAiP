@@ -1,6 +1,6 @@
 #include <iostream>
 
-void OAiP_lab6_b5(double a, double b, double h = 0.2);
+void OAiP_lab6_b5(const double a, const double b, const double h = 0.2);
 
 int main()
 {
@@ -9,7 +9,7 @@ int main()
     return 0;
 }
 
-void OAiP_lab6_b5(double a, double b, double h)
+void OAiP_lab6_b5(const double a, const double b, const double h)
 {
     double x = a;
     double f;
