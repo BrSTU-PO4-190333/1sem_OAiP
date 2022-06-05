@@ -32,6 +32,8 @@
 Разработать линейные алгоритмы и реализовать с применением этих операторов
 
 - [Методичка](docs/lab4/OAiP_lab4.pdf)
+- [Исходный код](https://github.com/BrSTU-PO4-Galanin/1sem_OAiP/tree/galanin/lab4/sources)
+- [Отчёт](https://github.com/BrSTU-PO4-Galanin/1sem_OAiP/blob/pdf/ОАиП_ПО-4_Галанин_лаб4.pdf)
 
 ### Лабораторная работа №5
 
