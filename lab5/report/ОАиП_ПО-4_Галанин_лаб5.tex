@@ -1,0 +1,158 @@
+\documentclass[12pt, a4paper, simple]{eskdtext}
+
+\usepackage{_env/gpi_global.env}
+\usepackage{_env/gpi_report.env}
+\usepackage{_sty/gpi_lst}
+\usepackage{_sty/gpi_toc}
+\usepackage{_sty/gpi_t}
+\usepackage{_sty/gpi_u}
+
+\def \gpiDocTopic {Отчёт лабораторной работы №\gpiDocNum}
+
+\begin{document}
+\input{_tex/gpi_title_page_report.tex}
+
+\ESKDstyle{empty}
+
+\begin{center}
+    \textbf{\gpiDocTopic}
+\end{center}
+
+\paragraph{} \textbf{Тема}: <<\gpiTopicRep>>
+
+\paragraph{} \textbf{Цель}:
+изучить особенности использования условных операторов if и switch.
+
+\paragraph{} \textbf{Что нужно сделать}:
+
+\begin{center}
+    \textbf{Задание А5}
+\end{center}
+
+Оператор if.
+
+Написать программу проверки на положительность введенного числа.
+
+\paragraph{} \textbf{Разработка алгоритма}:
+
+Блок-схема на рисунке~\ref{fig:a5}.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[]
+    {../sources/flowcharts/OAiP_lab5_a5.png}
+    \caption{Блок-схема}
+    \label{fig:a5}
+\end{figure}
+
+\newpage
+
+\paragraph{} \textbf{Исходный код}: 
+
+\lstinputlisting[language=c, name=main.cpp]
+{../sources/OAiP_lab5_a5/OAiP_lab5_a5/main.cpp}
+
+\begin{lstlisting}[name=Вывод в консоль]
+ -9.000000 < 0
+ -2.330000 < 0
+ -0.000100 < 0
+ 0.000000 = 0
+ 0.000000 = 0
+ 0.000100 > 0
+ 2.330000 > 0
+ 9.000000 > 0
+\end{lstlisting}
+
+\newpage
+
+\paragraph{} \textbf{Что нужно сделать}:
+
+\begin{center}
+    \textbf{Задание Б5}
+\end{center}
+
+Оператор switch.
+
+Написать программу замены введенного числа от 0 до 9 соответствующим символом.
+
+\paragraph{} \textbf{Разработка алгоритма}:
+
+Блок-схема на рисунке~\ref{fig:b5}.
+
+\begin{figure}[ph]
+    \centering
+    \includegraphics[]
+    {../sources/flowcharts/OAiP_lab5_b5.png}
+    \caption{Блок-схема}
+    \label{fig:b5}
+\end{figure}
+
+\paragraph{} \textbf{Исходный код}: 
+
+\lstinputlisting[language=c, name=main.cpp]
+{../sources/OAiP_lab5_b5/OAiP_lab5_b5/main.cpp}
+
+\begin{lstlisting}[name=Вывод в консоль]
+'Y' => case 9
+'-' => default
+'D' => case 6
+'O' => case 4
+'W' => case 5
+'N' => case 2
+'-' => default
+\end{lstlisting}
+
+
+\paragraph{} \textbf{Вывод}:
+изучили особенности использования условных операторов if и switch.
+
+
+% = = = = = = = =
+\newpage
+% \addcontentsline{toc}{section}{Список использованных источников}
+% \section*{Список использованных источников}
+\paragraph{} \textbf{Список использованных источников}:
+\begin{enumerate}
+    \item[1.] Коллекция eskdx v0.98 - eskdx.pdf
+    [Электронный ресурс].
+    Режим доступа: \url{http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf}.
+    Дата доступа: 30.05.2022.
+
+    \item[2.] Использование системы верстки LaTeX - EVMiS\_Latex.pdf
+    [Электронный ресурс].
+    Режим доступа: \url{https://www.bstu.by/uploads/attachments/metodichki/kafedri/EVMiS_Latex.pdf}.
+    Дата доступа: 30.05.2022.
+
+    \item[3.] Опции пакета hyperref
+    [Электронный ресурс].
+    Режим доступа: \url{https://grammarware.net/text/syutkin/hyperref_options.pdf}.
+    Дата~доступа:~20.02.2022.
+
+    \item[4.] Developers - Docker
+    [Electronic resource].
+    Mode of access: \url{https://www.docker.com/get-started/}.
+    Date~of~access:~04.06.2022.
+
+    \item[5.] Manual installation steps for older versions of WSL | Microsoft Docs
+    [Electronic resource].
+    Mode of access: \url{https://aka.ms/wsl2kernel}.
+    Date~of~access:~04.06.2022.
+
+    \item[6.] LaTeX/Source Code Listings - Wikibooks, open books for an open world
+    [Electronic resource].
+    Mode of access: \url{https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings}.
+    Date~of~access:~04.06.2022.
+
+    \item[7.] 1sem\_OAiP/OAiP\_lab5.pdf at galanin · BrSTU-PO4-Galanin/1sem\_OAiP
+    [Электронный ресурс].
+    Режим доступа: \url{https://github.com/BrSTU-PO4-Galanin/1sem_OAiP/blob/galanin/docs/lab5/OAiP_lab5.pdf}.
+    Дата доступа: 05.06.2022.
+
+    \item[8.] 1sem\_OAiP/OAiP\_lab2.doc at galanin · BrSTU-PO4-Galanin/1sem\_OAiP
+    [Электронный ресурс].
+    Режим доступа: \url{https://github.com/BrSTU-PO4-Galanin/1sem_OAiP/blob/galanin/docs/lab2/OAiP_lab2.doc}.
+    Дата доступа: 05.06.2022.
+\end{enumerate}
+
+\newpage
+\end{document}
