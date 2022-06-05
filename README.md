@@ -51,6 +51,8 @@
 изучить особенности использования условных операторов if и switch
 
 - [Методичка](docs/lab5/OAiP_lab5.pdf)
+- [Исходный код](https://github.com/BrSTU-PO4-Galanin/1sem_OAiP/tree/galanin/lab5/sources)
+- [Отчёт](https://github.com/BrSTU-PO4-Galanin/1sem_OAiP/blob/pdf/ОАиП_ПО-4_Галанин_лаб5.pdf)
 
 ### Лабораторная работа №6
 
